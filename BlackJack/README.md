@@ -11,11 +11,5 @@ Projet créer dans le cadre du BUT Informatique pour apprendre le framework Java
 ## Concept : 
 
 Ce projet et la création d'un jeu de BlackJack avec une IHM
-
-## Installation 
-
-::: details Outils nécessaire :
-- Java 
-- Terminal de commande (Windows Powershell)
-:::
+ 
 
