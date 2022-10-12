@@ -1,0 +1,77 @@
+```plantuml
+
+@startuml dcuV2
+skinparam actorStyle awesome
+left to right direction
+
+package ApplicationV2{
+    /'guichetier v0'/
+    usecase 0 as "Gérer le compte d'un client"
+    usecase 00 as "Gérer les comptes et clients de la banque"
+    usecase 1 as "Modifier info client"
+    usecase 2 as "Créer un nouveau client"
+    usecase 3 as "Consulter un compte"
+    usecase 4 as "Créditer/Débiter un compte"
+
+    /'chef d'agence v0'/
+    usecase 5 as "Rendre inactif un client"
+
+    /'guichetier v1'/
+    usecase 7 as "Créer un compte"
+    usecase 8 as "Effectuer un virement d'un compte à un compte"
+    usecase 9 as "Cloturer un compte"
+
+    /'chef d'agence v1'/
+    usecase 10 as "Gérer les employés (guichetier et chef d’agence)"
+
+    /'guichetier v2'/
+    usecase 11 as "Générer un relevé mensuel d’un compte en PDF"
+    usecase 12 as "Gérer les prélèvements automatiques"
+
+    /'chef d'agence v2'/
+    usecase 13 as "Effectuer un Débit exceptionnel"
+    usecase 14 as "Faire une simulation"
+    usecase 141 as "Simuler un emprunt"
+    usecase 142 as "Simuler une assurance d’emprunt"
+
+}
+
+package EmployesBanque{
+    actor Guichetier  
+}
+
+package DirectionBanque{
+actor ChefAgence
+}
+
+ChefAgence -|> Guichetier
+
+Guichetier --> 0
+Guichetier --> 00
+
+
+0 -->1
+0 --> 4
+0 --> 3
+0 --> 11
+0 --> 12
+
+00 --> 2
+00 --> 7
+00 --> 8
+00 --> 9
+
+ChefAgence --> 5
+ChefAgence --> 10
+ChefAgence --> 13
+ChefAgence --> 14 
+Guichetier --> 14
+
+14 --> 141
+14 --> 142
+
+@enduml 
+
+```
+
+

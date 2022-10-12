@@ -1,0 +1,50 @@
+```plantuml
+
+@startuml
+skinparam actorStyle awesome
+left to right direction
+
+
+package Application{
+    usecase 1 as "Modifier info client"
+usecase 2 as "Créer un nouveau client"
+usecase 3 as "Consulter un compte"
+usecase 4 as "Débiter un compte"
+
+usecase 5 as "Rendre inactif un client"
+
+
+usecase 6 as "Créditer/Débiter un compte"
+usecase 7 as "Créer un compte"
+usecase 8 as "Effectuer un virement d'un compte à un compte"
+usecase 9 as "Cloturer un compte"
+
+usecase 10 as "Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence)"
+}
+
+package EmployesBanque{
+    actor Guichetier 
+    actor ChefAgence 
+}
+
+
+
+Guichetier --> 1
+Guichetier --> 2
+Guichetier -->3
+Guichetier --> 4
+Guichetier --> 6
+Guichetier --> 7
+Guichetier --> 8
+Guichetier --> 9
+
+ChefAgence --> 5
+ChefAgence --> 10
+
+
+
+@enduml 
+
+```
+
+

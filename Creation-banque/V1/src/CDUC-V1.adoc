@@ -1,0 +1,107 @@
+# CDUC VERSION 1
+:toc: left
+:toc-title: Table des matières
+
+## Client 
+
+### Nom
+Notre client est la banque DailyBank
+
+### Structure
+Cette banque est composée de 100 Agences où notre application sera déployée 
+
+## Personne(s) consultée(s)
+* Christopher Marie-Angélique
+* Guillevic Yann 
+* Longèque Ruben
+
+### Rôle(s)
+
+Christopher : -> réalisation du CDUC v2 et du cahier des tests v1 +
+Yann : -> réalisation du GANTT v2 et du cahier des tests v1 +
+Ruben : -> réalisation du GANTT v3 et du cahier des tests v1
+
+### Organisation de l'équipe 
+
+Pour réaliser ce projet, nous utiliserons tout d'abord divers outils collaboratifs tels que le site web GitHub qui nous permettra de structurer notre code pour mieux le gérer ainsi que de déposer nos livrables. Il nous permettra aussi de gérer les différentes tâches du projet, et d'ainsi voir quels tâches sont attribuer à quelle personne. +
+Nous utiliserons aussi le logiciel : ProjectLibre qui nous permettra de réaliser les différentes version du GANTT du projet pour ainsi planifier les tâches de celui-ci. +
+Les livrables attendues ainsi que leur dates de livraisons sont : 
+
+* GANTT v1 / CDUC v1 : Semaine 13
+* GANTT v2 et v3 / CDUC v2 et v3 / Cahier Tests v1 : Semaine 16
+* Doc technique v2 et v3 / Doc util v2 et v3 / Cahier test v3 / GANTT à jour : Semaine 20
+* Livraison finale / Chiffrage du projet : Semaine 23
+* Bilan du projet : Semaine 24 
+
+
+## Rappel du contexte
+Ces dernières années, les banques ont dû s'adaptées aux exigences en termes d'instantanéité de leurs clients. Pour ce faire, les banques françaises ont accentué leurs efforts de restructuration et leurs investissements dans le digital. +
+Par exemple, la Banque Postale ont mis en place au printemps 2019 une application mobile "Ma French Bank". +
+
+
+Pour s’adapter aux exigences d’instantanéité de leurs clients, les banques françaises ont accentué leurs efforts de restructuration et leurs investissements dans le digital. Des chantiers longs et coûteux. Par exemple, la Banque Postale a indiqué que sa banque mobile baptisée Ma French Bank sera disponible dans les bureaux de Poste au printemps 2019. Mais les banques ne se contentent pas de créer des offres alternatives : elles rénovent aussi en profondeur leurs services de banque au quotidien.
+
+## Problématique 
+La problématique à laquelle répond ce projet est : Comment robotiser les tâches automatisables pour offrir un service digitale plus moderne ainsi que plus rapide pour les client ? 
+
+
+## Objectifs poursuivies 
+L'objectif recherché par la banque DailyBank est de développer une application Java-Oracle de gestion de comptes, pour remplacer plusieurs outils obsolètes. +
+Pour ce faire, une première version est mise à dispotion "DailyBank" qu'il faudra adapter aux nouveaux besoins. +
+Ces nouveaux besoins sont :
+
+* Elle doit permettre de gérer des comptes bancaires de dépôt pour des clients créés 
+* Elle doit permettre de débiter et de créditer un compte de deux manières différentes : 
+** Par échange d'argent  entre deux comptes distincts domiciliés dans le même réseau bancaire
+** Par personne physique se présentant devant un guichet
+
+
+## Rappel de l'existant (V0)
+
+Dans la version actuelle de l'application, plusieurs actions/fonctionnalités peuvent êtres effectuer :
+
+* Un guichetier peut :
+** Modifier les informations des clients (adresse, téléphone, …)
+** Créer de nouveaux clients
+** Consulter un compte
+** Débiter un compte
+
+* Un chef d'agence peut :
+** Rendre inactif un client
+
+## Gains attendus : version 1
+Dans la première version à développer, plusieurs fonctionnalités devront être mises en place : 
+
+* Guichetier : 
+** Créditer/débiter un compte (java et BD avec procédure stockée)
+
+** Créer un compte
+
+** Effectuer un virement de compte à compte
+
+** Clôturer un compte
+* Chef d'Agence :
+** Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence)
+
+
+## Contraintes
+
+### Techniques :
+
+* La première version de l'application bancaire est développer avec une IHM grâce au langage de programmation JavaFX, que nous devrons donc réutilisé pour les prochaines versions.
+* Chaque étudiants devra programmer au moins 1 fonctionnalités de l'application
+* Les différentes versions des CDUC doivent être rédigez en asciidoc
+
+### Organisationnelles :
+Ensuite, plusieurs contraintes nous sont donner :
+
+* Le projet doit être réalisé par 3 à 4 étudiants
+* Les codes sources et les différentes documentations doivent être déposer sur Github
+* Les étudiants doivent ordonnancer les tâches du projet en les formalisant via des issues et les classées en fonction de l'avancée de ces tâches
+* Un GANTT doit être réalisés et déposer en PDF sur discord
+* des Use-cases doivent être mises en place pour permettre de distinguer les différentes actions réalisable dans l'application 
+
+## Risques 
+Le principale risque qui peut être relevé lors de ce projet et une mauvaise gestion du temps. En effet, nous devons respecter la deadline posez par notre client.
+Ensuite, il est fort probable que des conflits se produisent sur GitHub, dû fait d'une mauvaise gestion des commits et des pull.
+

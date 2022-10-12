@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.SimulationEmpruntController">
+   <left>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox prefHeight="453.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="199.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="89.0" prefWidth="241.0" text="Capital emprunté (€)" textAlignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="222.0" text="Durée (en années)" textAlignment="CENTER" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="209.0" text="Taux Annuel (%)" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="56.0" prefWidth="211.0" text="Taux Applicable (%)" textAlignment="CENTER" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="47.0" prefWidth="205.0" text="Nombre de période&#10;(en nombre de mois)" textAlignment="CENTER" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="210.0" text="Mensualité de l'emprunt (€)&#10;(hors assurance)" textAlignment="CENTER" GridPane.rowIndex="5" />
+                        <Label alignment="CENTER" prefHeight="48.0" prefWidth="211.0" text="Coût du crédit (€)" textAlignment="CENTER" GridPane.rowIndex="6" />
+                        <Label alignment="CENTER" prefHeight="59.0" prefWidth="206.0" text="Frais de dossier (€)" textAlignment="CENTER" GridPane.rowIndex="7" />
+                        <Label alignment="CENTER" prefHeight="65.0" prefWidth="222.0" text="Total (€)" textAlignment="CENTER" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <TextArea editable="false" maxHeight="-Infinity" prefHeight="42.0" prefWidth="400.0" text="                         Simulation d'emprunt" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <VBox prefHeight="453.0" prefWidth="195.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="476.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="capital" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0">
+                           <GridPane.margin>
+                              <Insets left="1.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="duree" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="1" />
+                        <TextField fx:id="tauxAnnuel" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="2" />
+                        <TextField fx:id="tauxApplicable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="3" />
+                        <TextField fx:id="nbPeriodes" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="4" />
+                        <TextField fx:id="mensualiteSansA" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="5" />
+                        <TextField fx:id="coutCredit" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="6" />
+                        <TextField fx:id="fraisDossier" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="7" />
+                        <TextField fx:id="total" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </left>
+   <right>
+      <BorderPane prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox prefHeight="452.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="202.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="212.0" text="Taux Assurance (%)" textAlignment="CENTER">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" prefHeight="59.0" prefWidth="252.0" text="Mensualité de l'assurance (€)" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin></Label>
+                        <Label alignment="CENTER" prefHeight="56.0" prefWidth="241.0" text="Coût de l'assurance (€)" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="73.0" prefWidth="214.0" text="Durée du prêt &#10;(en nombre de mois)" textAlignment="CENTER" GridPane.rowIndex="1" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </GridPane>
+                  <Button fx:id="simulerEmprunt" mnemonicParsing="false" onAction="#displayEmprunt" text="Simuler Emprunt">
+                     <VBox.margin>
+                        <Insets left="30.0" top="75.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="simulerAssurance" mnemonicParsing="false" onAction="#displayAssuranceEmprunt" text="Simuler Assurance">
+                     <VBox.margin>
+                        <Insets left="30.0" top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="butTotal" mnemonicParsing="false" onAction="#displayTotal" text="Total">
+                     <VBox.margin>
+                        <Insets left="30.0" top="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <TextArea editable="false" prefHeight="41.0" prefWidth="400.0" text="                 Simulation d'assurance d'emprunt" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <VBox prefHeight="452.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="204.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="coutAssurance" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="3" />
+                        <TextField fx:id="mensualiteAssurance" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="2" />
+                        <TextField fx:id="tauxAssurance" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" />
+                        <TextField fx:id="dureePretAssurance" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </right>
+</BorderPane>

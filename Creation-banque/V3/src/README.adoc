@@ -1,0 +1,10 @@
+# INFORMATION SUR LA VERSION 3
+
+Madame, Monsieur,
+
+Nous avons le regret de vous informer que suite à un manques de temps, nous n'avons malheureusement pas été en capacité de développer la version 3 de l'application DailyBank. +
+Néemoins, nous nous engageons à faire tous notre possible pour développer celle-ci dans les meilleurs délais.
+
+En vous remerciant et en vous souhaitant une excellente journée.
+
+L'équipe de devs

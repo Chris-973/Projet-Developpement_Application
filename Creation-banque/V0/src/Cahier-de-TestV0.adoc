@@ -1,0 +1,133 @@
+# CAHIER DE TEST VERSION  0
+:toc: left
+:toc-title: Table des matières
+:nofooter:
+
+## Fiche de Test : gestion de l'Application
+
+[cols="1,1,1,1"]
+|===
+|id Test |nom Test |Condition de satisfaction |Précondition
+
+|01
+|TestQuitterApplicationOK
+|Une fenêtre de confirmation s'affiche à l'écran. +
+Au clique du bouton « ok » l'application se ferme et si une connexion est établie, elle est arrêter.
+|Se trouver sur la fenêtre principale
+
+|01
+|TestQuitterApplicationNOK
+|Se trouver sur la fenêtre principale. +
+Une fenêtre de confirmation s'affiche à l'écran. +
+Au clique du bouton « annuler » l'application continue de foncttionner et si une connexion est établie, elle reste établie.
+|Se trouver sur la fenêtre principale.
+
+|02
+|TestConnexionOK
+|Au clique du bouton « valider » une fenêtre d'identification s'ouvre. +
+Au clique du bouton « valider » , si les préconditions sont validées, une connexion est établie. +
+La fenêtre d'identitification se ferme.
+|Se trouver sur la fenêtre principale. +
+Les champs ne doivent pas être vides. +
+Le login et le mot de passe doivent correspondre à ceux d'un compte présent dans la base de données.
+
+|03
+|TestConnexionNOK
+|Au clique du bouton « connexion » une fenêtre d'identification s'ouvre. +
+Au clique du bouton « annuler » aucune connexion n'est établie et la fenêtre d'identification se ferme.
+|Se trouver sur la fenêtre principale
+
+|04
+|TestDeconnexion
+|Au clique du bouton « deconnexion » la connexion qui est actuellement établie s'arrête
+|Une connexion à un compte doit avoir été établie. +
+Se trouver sur la fenêtre principale
+|===
+
+## Fiche de Test : gestion des clients 
+
+
+[cols="1,1,1,1"]
+|===
+|id Test |nom Test |Condition de satisfaction |précondition
+
+|05
+|TestGestionClient
+|Au clique du bouton « clients » la fenêtre de gestions des clients s'affiche.
+|Se trouver sur la fenêtre principale. +
+Une connexion à un compte doit être établie. 
+
+|06
+|TestRechercherClientOK
+|En cliquant sur le bouton « rechercher » la liste des clients s'affiche sur la fenêtre.
+|Se trouver sur la fenêtre de gestion des clients. +
+Une connexion avec un compte doit être établie.
+
+|07
+|TestModificationClientOK
+|En cliquant sur le bouton « modifier client » une fenêtre de modification des informations d'un client s'affiche. +
+En cliquant sur le bouton « modifier », la modification s'enregistre dans la base de données et la fenêtre de modification d'un client se ferme.
+|Une connexion à un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des clients. +
+Un client doit être sélectionner. +
+Le client ne doit pas être désactiver.
+Les différent champs ne doivent pas être vides. +
+Le numéro de téléphone doit contenir exactement 10 chiffres et aucune lettres. +
+Le mail doit se être de la forme : @_saisie_._saisie_
+
+|08
+|TestModificationClientNOK
+|En cliquant sur le bouton « modifier client » une fenêtre de modification des informations d'un client s'affiche. +
+En cliquant sur le bouton « annuler » la modification ne s'enregistre pas dans la base de données et la fenêtre de modification se ferme.
+|Une connexion à un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des clients. +
+Un client doit être sélectionner. +
+Le client ne doit pas être désactiver.
+
+|09
+|TestCreationClientOK
+|En cliquant sur le bouton « nouveau client » une fenêtre de création d'un client s'affiche. +
+En cliquant sur le bouton « ajouter » le nouveau client est ajouter à la base de données et la fenêtre de création d'un client se ferme.
+|Une connexion à un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des clients. +
+Les différents champs ne doivent pas être vides. +
+Le numéro de téléphone doit contenir exactement 10 chiffres et aucune lettres. +
+Le mail doit être de la forma : @_saisie_._saisie_
+
+|10
+|TestCreationClientNOK
+|En cliquant sur le bouton « nouveau client » une fenêtre de création d'un client s'affiche. +
+En cliquant sur le bouton « annuler » le nouveau client n'est pas ajouter à la base de données et la fenêtre de création d'un client se ferme.
+|Une connexion à un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des clients.
+|===
+
+## Fiche de test : Gestion des comptes bancaire
+
+[cols="1,1,1,1"]
+|===
+|id Test |nom Test |Condition de satisfaction |précondition
+
+|11
+|TestGestionComptesbancaire
+|En cliquant sur le bouton « comptes client » la fenêtre de gestion des comptes bancaire d'un client s'affiche.  
+|Une connexion avec un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des clients. +
+Un client doit être sélectionner. +
+Le clients ne doit pas être désactiver.
+|===
+
+## Fiche de test : Gestion des opérations
+
+[cols="1,1,1,1"]
+|===
+|id Test |nom Test |Condition de satisfaction |précondition
+
+|13
+|TestVoirOperation
+|En cliquant sur le bouton « voir opérations » la fenêtre de gestion des opérations d'un compte bancaire s'affiche et la liste des opérations de ce compte est visible sur la fenêtre.
+|Une connexion avec un compte doit être établie. +
+Se trouver sur la fenêtre de gestion des comptes d'un client. +
+Un compte doit être sélectionner. +
+Le compte ne doit pas être clôturer.
+|===
